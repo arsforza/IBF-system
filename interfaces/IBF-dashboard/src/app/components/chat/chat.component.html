@@ -169,7 +169,7 @@
             </ion-note>
           </ion-col>
         </ion-row>
-        <ion-list class="background-light">
+        <ion-list>
           <ion-item
             *ngFor="let action of area.eapActions"
             class="ion-no-padding"
@@ -189,7 +189,7 @@
               "
             ></ion-checkbox>
             <ion-label class="action-label ion-text-wrap"
-              ><strong>{{ action.aofLabel }}</strong
+              ><span class="action-aoflabel">{{ action.aofLabel }}</span
               >: {{ action.label }}
             </ion-label>
           </ion-item>
